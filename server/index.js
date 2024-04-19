@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const posts = require('./routes/api/posts');   //posts is a JS file that just contains routes
+const posts = require('./routes/api/posts');   //posts is a JS file that just contains routes & defines posts
 
 app.use('/api/posts', posts);       //server will run on /api/posts  EX localhost:5000/api/posts
 
