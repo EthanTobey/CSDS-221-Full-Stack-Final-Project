@@ -1,0 +1,13 @@
+CSDS 221 Full Stack Web Development Final Project Idea:
+
+Flashcards/Quiz App:
+ - Base Features: - Make sets of Q/A flashcards, save sets to database
+             - Pull sets from database
+             - Display flashcards - perhaps ask question and prompt user for answer
+             - (maybe) Track user's score (how many correct of set of cards)
+
+
+ - Extra Features:
+     - Make private profiles s.t each user has their own private sets of flashcards only visible when they are logged in
+     - Allow users to make public sets that any user can see
+
