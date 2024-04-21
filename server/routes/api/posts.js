@@ -14,8 +14,8 @@ router.get('/', async (req, res) => {                //  '/' is ACTUALLY referen
 //Add Post    - defining request sent on backend
 router.post('/', async (req, res) => {
     const posts = await loadPostsCollection();
-    await posts.insertOne({
-        text: req.body.text,
+    await posts.insertOne({                          //the fields stored in each post - currently each post has two attributes: text, and time it was created at
+        text: req.body.text,                         
         createdAt: new Date()
     });
     res.status(201).send();   //send status 201 that all is well and post was created - //recall 200's level is good stuff
