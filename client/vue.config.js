@@ -6,7 +6,7 @@ module.exports = defineConfig({
 
 const path = require('path');
 module.exports = {
-  //outputDir: path.resolve(__dirname, '../server/public'),   //path where the build will go when we build the project
+  outputDir: path.resolve(__dirname, '../server/public'),   //path where the build will go when we build the project
   devServer: {
     //I believe this is basically saying for anything trying to route to /api, go to http://localhost:5000 first - reconfiguring path to find backend
     //NOTE: a proxy sits between client and internet, and intercepts requests from client before sending them out
